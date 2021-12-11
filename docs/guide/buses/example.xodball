@@ -1,0 +1,579 @@
+{
+  "name": "",
+  "patches": {
+    "@/no-buses": {
+      "links": {
+        "By3TEu-7UQ": {
+          "id": "By3TEu-7UQ",
+          "input": {
+            "nodeId": "B1H6NuWQIX",
+            "pinKey": "SyssEEhJm"
+          },
+          "output": {
+            "nodeId": "rkmpEd-X87",
+            "pinKey": "__out__"
+          }
+        },
+        "ByJlTEdbXIm": {
+          "id": "ByJlTEdbXIm",
+          "input": {
+            "nodeId": "B1H6NuWQIX",
+            "pinKey": "HJkfWmny7"
+          },
+          "output": {
+            "nodeId": "HkuTNdW78m",
+            "pinKey": "__out__"
+          }
+        },
+        "ByRT4d-mIX": {
+          "id": "ByRT4d-mIX",
+          "input": {
+            "nodeId": "BJP6NdZ7IX",
+            "pinKey": "B1vdYXhkQ"
+          },
+          "output": {
+            "nodeId": "HkuTNdW78m",
+            "pinKey": "__out__"
+          }
+        },
+        "H1j6Nd-7IX": {
+          "id": "H1j6Nd-7IX",
+          "input": {
+            "nodeId": "Bk9TEuWQL7",
+            "pinKey": "__in__"
+          },
+          "output": {
+            "nodeId": "BJP6NdZ7IX",
+            "pinKey": "ryviw_EOb"
+          }
+        },
+        "H1ul64_WX87": {
+          "id": "H1ul64_WX87",
+          "input": {
+            "nodeId": "ryfp4dWQIX",
+            "pinKey": "S1FFN4nkm"
+          },
+          "output": {
+            "nodeId": "BkaNdbQLQ",
+            "pinKey": "__out__"
+          }
+        },
+        "HJgx64O-Q8X": {
+          "id": "HJgx64O-Q8X",
+          "input": {
+            "nodeId": "BJP6NdZ7IX",
+            "pinKey": "Sk2oU_Vdb"
+          },
+          "output": {
+            "nodeId": "rkVpNObmIX",
+            "pinKey": "SJB3vO4uZ"
+          }
+        },
+        "Hk9l6NO-XUX": {
+          "id": "Hk9l6NO-XUX",
+          "input": {
+            "nodeId": "B1H6NuWQIX",
+            "pinKey": "BJfKruVdb"
+          },
+          "output": {
+            "nodeId": "B1bTVdbQ8X",
+            "pinKey": "__out__"
+          }
+        },
+        "HkUla4_WXLQ": {
+          "id": "HkUla4_WXLQ",
+          "input": {
+            "nodeId": "ryfp4dWQIX",
+            "pinKey": "S1dKPuVdW"
+          },
+          "output": {
+            "nodeId": "B1H6NuWQIX",
+            "pinKey": "HJbjB_Nd-"
+          }
+        },
+        "SkWx6EdWQLm": {
+          "id": "SkWx6EdWQLm",
+          "input": {
+            "nodeId": "rkVpNObmIX",
+            "pinKey": "S1FFN4nkm"
+          },
+          "output": {
+            "nodeId": "Byl64ObXI7",
+            "pinKey": "__out__"
+          }
+        },
+        "r1HxaEOb78m": {
+          "id": "r1HxaEOb78m",
+          "input": {
+            "nodeId": "rkVpNObmIX",
+            "pinKey": "BJrcyE3y7"
+          },
+          "output": {
+            "nodeId": "HkuTNdW78m",
+            "pinKey": "__out__"
+          }
+        },
+        "r1YxpNd-mIX": {
+          "id": "r1YxpNd-mIX",
+          "input": {
+            "nodeId": "rkVpNObmIX",
+            "pinKey": "S1dKPuVdW"
+          },
+          "output": {
+            "nodeId": "ryfp4dWQIX",
+            "pinKey": "SJB3vO4uZ"
+          }
+        },
+        "rk66E_W7I7": {
+          "id": "rk66E_W7I7",
+          "input": {
+            "nodeId": "ryfp4dWQIX",
+            "pinKey": "BJrcyE3y7"
+          },
+          "output": {
+            "nodeId": "HkuTNdW78m",
+            "pinKey": "__out__"
+          }
+        }
+      },
+      "nodes": {
+        "B1H6NuWQIX": {
+          "boundLiterals": {
+            "BJfKruVdb": "On Boot"
+          },
+          "id": "B1H6NuWQIX",
+          "position": {
+            "x": -7,
+            "y": -1,
+            "units": "slots"
+          },
+          "type": "xod/i2c/begin-transmission"
+        },
+        "B1bTVdbQ8X": {
+          "id": "B1bTVdbQ8X",
+          "label": "W",
+          "position": {
+            "x": 3,
+            "y": -4,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        },
+        "BJP6NdZ7IX": {
+          "id": "BJP6NdZ7IX",
+          "position": {
+            "x": 2,
+            "y": -1,
+            "units": "slots"
+          },
+          "type": "xod/i2c/end-transmission"
+        },
+        "Bk9TEuWQL7": {
+          "id": "Bk9TEuWQL7",
+          "label": "DONE",
+          "position": {
+            "x": 2,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/output-pulse"
+        },
+        "BkaNdbQLQ": {
+          "id": "BkaNdbQLQ",
+          "label": "REG",
+          "position": {
+            "x": -3,
+            "y": -4,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-byte"
+        },
+        "Byl64ObXI7": {
+          "id": "Byl64ObXI7",
+          "label": "VAL",
+          "position": {
+            "x": 0,
+            "y": -4,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-byte"
+        },
+        "HkuTNdW78m": {
+          "id": "HkuTNdW78m",
+          "label": "I2C",
+          "position": {
+            "x": -7,
+            "y": -4,
+            "units": "slots"
+          },
+          "type": "xod/i2c/input-i2c"
+        },
+        "rkVpNObmIX": {
+          "id": "rkVpNObmIX",
+          "position": {
+            "x": -1,
+            "y": -1,
+            "units": "slots"
+          },
+          "type": "xod/i2c/write-byte"
+        },
+        "rkmpEd-X87": {
+          "id": "rkmpEd-X87",
+          "label": "ADDR",
+          "position": {
+            "x": -6,
+            "y": -4,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-byte"
+        },
+        "ryfp4dWQIX": {
+          "boundLiterals": {
+            "S1FFN4nkm": "20h"
+          },
+          "id": "ryfp4dWQIX",
+          "position": {
+            "x": -4,
+            "y": -1,
+            "units": "slots"
+          },
+          "type": "xod/i2c/write-byte"
+        }
+      },
+      "path": "@/no-buses"
+    },
+    "@/with-buses": {
+      "links": {
+        "B1GpcOWmIQ": {
+          "id": "B1GpcOWmIQ",
+          "input": {
+            "nodeId": "BJrvKO-QIm",
+            "pinKey": "HJkfWmny7"
+          },
+          "output": {
+            "nodeId": "H1ZTqObQ87",
+            "pinKey": "__out__"
+          }
+        },
+        "BJ8gwYdZQIQ": {
+          "id": "BJ8gwYdZQIQ",
+          "input": {
+            "nodeId": "SJGPK_-XUQ",
+            "pinKey": "S1dKPuVdW"
+          },
+          "output": {
+            "nodeId": "BJrvKO-QIm",
+            "pinKey": "HJbjB_Nd-"
+          }
+        },
+        "ByuxvKd-X8X": {
+          "id": "ByuxvKd-X8X",
+          "input": {
+            "nodeId": "SJGPK_-XUQ",
+            "pinKey": "S1FFN4nkm"
+          },
+          "output": {
+            "nodeId": "HyDtOb7Um",
+            "pinKey": "__out__"
+          }
+        },
+        "H1xyIQc5yr": {
+          "id": "H1xyIQc5yr",
+          "input": {
+            "nodeId": "HJyLm591H",
+            "pinKey": "__in__"
+          },
+          "output": {
+            "nodeId": "ry-vFubQIX",
+            "pinKey": "__out__"
+          }
+        },
+        "HJgGJK-XU7": {
+          "id": "HJgGJK-XU7",
+          "input": {
+            "nodeId": "Bk4vKO-m8X",
+            "pinKey": "BJrcyE3y7"
+          },
+          "output": {
+            "nodeId": "S1M1F-787",
+            "pinKey": "__out__"
+          }
+        },
+        "S1egDKOZQIX": {
+          "id": "S1egDKOZQIX",
+          "input": {
+            "nodeId": "BJPwYuZXLQ",
+            "pinKey": "Sk2oU_Vdb"
+          },
+          "output": {
+            "nodeId": "Bk4vKO-m8X",
+            "pinKey": "SJB3vO4uZ"
+          }
+        },
+        "S1ep9dbmL7": {
+          "id": "S1ep9dbmL7",
+          "input": {
+            "nodeId": "Skp5uZmL7",
+            "pinKey": "__in__"
+          },
+          "output": {
+            "nodeId": "S1dPYuZQLX",
+            "pinKey": "__out__"
+          }
+        },
+        "S1fyLXqcyB": {
+          "id": "S1fyLXqcyB",
+          "input": {
+            "nodeId": "BJrvKO-QIm",
+            "pinKey": "BJfKruVdb"
+          },
+          "output": {
+            "nodeId": "Hk-kUm59yS",
+            "pinKey": "__out__"
+          }
+        },
+        "Sy3vF_ZQUX": {
+          "id": "Sy3vF_ZQUX",
+          "input": {
+            "nodeId": "BJrvKO-QIm",
+            "pinKey": "SyssEEhJm"
+          },
+          "output": {
+            "nodeId": "ry7vFubm8Q",
+            "pinKey": "__out__"
+          }
+        },
+        "SybxvYubQIQ": {
+          "id": "SybxvYubQIQ",
+          "input": {
+            "nodeId": "Bk4vKO-m8X",
+            "pinKey": "S1FFN4nkm"
+          },
+          "output": {
+            "nodeId": "HJlDY_W7Lm",
+            "pinKey": "__out__"
+          }
+        },
+        "r1tgwYOZQ8X": {
+          "id": "r1tgwYOZQ8X",
+          "input": {
+            "nodeId": "Bk4vKO-m8X",
+            "pinKey": "S1dKPuVdW"
+          },
+          "output": {
+            "nodeId": "SJGPK_-XUQ",
+            "pinKey": "SJB3vO4uZ"
+          }
+        },
+        "rJovKuW7Im": {
+          "id": "rJovKuW7Im",
+          "input": {
+            "nodeId": "SkqDt_-XUQ",
+            "pinKey": "__in__"
+          },
+          "output": {
+            "nodeId": "BJPwYuZXLQ",
+            "pinKey": "ryviw_EOb"
+          }
+        },
+        "rJxtWFZQ8X": {
+          "id": "rJxtWFZQ8X",
+          "input": {
+            "nodeId": "BJPwYuZXLQ",
+            "pinKey": "B1vdYXhkQ"
+          },
+          "output": {
+            "nodeId": "BkF-FWQIm",
+            "pinKey": "__out__"
+          }
+        },
+        "ryelkK-7Lm": {
+          "id": "ryelkK-7Lm",
+          "input": {
+            "nodeId": "SJGPK_-XUQ",
+            "pinKey": "BJrcyE3y7"
+          },
+          "output": {
+            "nodeId": "B1eyFbmIQ",
+            "pinKey": "__out__"
+          }
+        }
+      },
+      "nodes": {
+        "B1eyFbmIQ": {
+          "id": "B1eyFbmIQ",
+          "label": "I2C",
+          "position": {
+            "x": 5,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/from-bus"
+        },
+        "BJPwYuZXLQ": {
+          "id": "BJPwYuZXLQ",
+          "position": {
+            "x": 11,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/i2c/end-transmission"
+        },
+        "BJrvKO-QIm": {
+          "boundLiterals": {
+            "BJfKruVdb": "On Boot"
+          },
+          "id": "BJrvKO-QIm",
+          "position": {
+            "x": 2,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/i2c/begin-transmission"
+        },
+        "Bk4vKO-m8X": {
+          "id": "Bk4vKO-m8X",
+          "position": {
+            "x": 8,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/i2c/write-byte"
+        },
+        "BkF-FWQIm": {
+          "id": "BkF-FWQIm",
+          "label": "I2C",
+          "position": {
+            "x": 11,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/from-bus"
+        },
+        "H1ZTqObQ87": {
+          "id": "H1ZTqObQ87",
+          "label": "I2C",
+          "position": {
+            "x": 2,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/from-bus"
+        },
+        "HJlDY_W7Lm": {
+          "id": "HJlDY_W7Lm",
+          "label": "VAL",
+          "position": {
+            "x": 9,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-byte"
+        },
+        "HJyLm591H": {
+          "id": "HJyLm591H",
+          "label": "W",
+          "position": {
+            "x": 11,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/to-bus"
+        },
+        "Hk-kUm59yS": {
+          "id": "Hk-kUm59yS",
+          "label": "W",
+          "position": {
+            "x": 4,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/from-bus"
+        },
+        "HyDtOb7Um": {
+          "id": "HyDtOb7Um",
+          "label": "REG",
+          "position": {
+            "x": 6,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-byte"
+        },
+        "S1M1F-787": {
+          "id": "S1M1F-787",
+          "label": "I2C",
+          "position": {
+            "x": 8,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/from-bus"
+        },
+        "S1dPYuZQLX": {
+          "id": "S1dPYuZQLX",
+          "label": "I2C",
+          "position": {
+            "x": 2,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/i2c/input-i2c"
+        },
+        "SJGPK_-XUQ": {
+          "boundLiterals": {
+            "S1FFN4nkm": "20h"
+          },
+          "id": "SJGPK_-XUQ",
+          "position": {
+            "x": 5,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/i2c/write-byte"
+        },
+        "Skp5uZmL7": {
+          "id": "Skp5uZmL7",
+          "label": "I2C",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/to-bus"
+        },
+        "SkqDt_-XUQ": {
+          "id": "SkqDt_-XUQ",
+          "label": "DONE",
+          "position": {
+            "x": 11,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/output-pulse"
+        },
+        "ry-vFubQIX": {
+          "id": "ry-vFubQIX",
+          "label": "W",
+          "position": {
+            "x": 11,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        },
+        "ry7vFubm8Q": {
+          "id": "ry7vFubm8Q",
+          "label": "ADDR",
+          "position": {
+            "x": 3,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-byte"
+        }
+      },
+      "path": "@/with-buses"
+    }
+  }
+}
