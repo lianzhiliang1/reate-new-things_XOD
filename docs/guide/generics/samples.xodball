@@ -1,0 +1,223 @@
+{
+  "name": "",
+  "patches": {
+    "@/if-else-samples": {
+      "nodes": {
+        "HJtoE5P2f": {
+          "id": "HJtoE5P2f",
+          "position": {
+            "x": 6,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else(number)"
+        },
+        "S1TcN9Dnz": {
+          "id": "S1TcN9Dnz",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else"
+        },
+        "rkqo4qPnz": {
+          "id": "rkqo4qPnz",
+          "position": {
+            "x": 10,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else(string)"
+        }
+      },
+      "path": "@/if-else-samples"
+    },
+    "@/main": {
+      "nodes": {
+        "HJIjL9v2f": {
+          "id": "HJIjL9v2f",
+          "position": {
+            "x": 8,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else(string)"
+        },
+        "HJXj85w3G": {
+          "id": "HJXj85w3G",
+          "position": {
+            "x": 4,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else(number)"
+        },
+        "HkZoIcwhG": {
+          "id": "HkZoIcwhG",
+          "position": {
+            "x": 0,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else(string)"
+        },
+        "S1AjL5DhM": {
+          "id": "S1AjL5DhM",
+          "position": {
+            "x": 1,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/if-else(string)"
+        }
+      },
+      "path": "@/main"
+    },
+    "@/passes": {
+      "links": {
+        "B1zaLwqwhM": {
+          "id": "B1zaLwqwhM",
+          "input": {
+            "nodeId": "Skl6IvqwnM",
+            "pinKey": "BJI7P8t9Z"
+          },
+          "output": {
+            "nodeId": "S1aLvqwnz",
+            "pinKey": "HJhXDIY9-"
+          }
+        },
+        "Bkb3wUNuxX": {
+          "id": "Bkb3wUNuxX",
+          "input": {
+            "nodeId": "S1nwLEux7",
+            "pinKey": "BJI7P8t9Z"
+          },
+          "output": {
+            "nodeId": "Skx3PINdg7",
+            "pinKey": "HJhXDIY9-"
+          }
+        },
+        "H1KvvcPhz": {
+          "id": "H1KvvcPhz",
+          "input": {
+            "nodeId": "H1xHv5DhG",
+            "pinKey": "BJI7P8t9Z"
+          },
+          "output": {
+            "nodeId": "rJvDPqPhG",
+            "pinKey": "SyomIRurDJ-"
+          }
+        },
+        "HJjHhnRHr": {
+          "id": "HJjHhnRHr",
+          "input": {
+            "nodeId": "BybaUv9v2G",
+            "pinKey": "rJgnw0417B"
+          },
+          "output": {
+            "nodeId": "SydtIEdgX",
+            "pinKey": "HJhXDIY9-"
+          }
+        },
+        "HyhS2hCHS": {
+          "id": "HyhS2hCHS",
+          "input": {
+            "nodeId": "BybaUv9v2G",
+            "pinKey": "BJ3DAE1QS"
+          },
+          "output": {
+            "nodeId": "Skl6IvqwnM",
+            "pinKey": "HJhXDIY9-"
+          }
+        },
+        "SyTtI4OeX": {
+          "id": "SyTtI4OeX",
+          "input": {
+            "nodeId": "SydtIEdgX",
+            "pinKey": "BJI7P8t9Z"
+          },
+          "output": {
+            "nodeId": "H1xHv5DhG",
+            "pinKey": "HJhXDIY9-"
+          }
+        }
+      },
+      "nodes": {
+        "BybaUv9v2G": {
+          "id": "BybaUv9v2G",
+          "position": {
+            "x": 4,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
+        },
+        "H1xHv5DhG": {
+          "id": "H1xHv5DhG",
+          "position": {
+            "x": 8,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/defer"
+        },
+        "S1aLvqwnz": {
+          "id": "S1aLvqwnz",
+          "position": {
+            "x": 5,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/defer"
+        },
+        "S1nwLEux7": {
+          "id": "S1nwLEux7",
+          "position": {
+            "x": 2,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/defer"
+        },
+        "Skl6IvqwnM": {
+          "id": "Skl6IvqwnM",
+          "position": {
+            "x": 5,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/defer"
+        },
+        "Skx3PINdg7": {
+          "id": "Skx3PINdg7",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/defer"
+        },
+        "SydtIEdgX": {
+          "id": "SydtIEdgX",
+          "position": {
+            "x": 8,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/defer"
+        },
+        "rJvDPqPhG": {
+          "id": "rJvDPqPhG",
+          "position": {
+            "x": 8,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/core/add"
+        }
+      },
+      "path": "@/passes"
+    }
+  }
+}
