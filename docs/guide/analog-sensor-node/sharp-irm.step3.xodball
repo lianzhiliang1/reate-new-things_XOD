@@ -1,0 +1,385 @@
+{
+  "name": "sharp-irm",
+  "patches": {
+    "@/gp2y0a02-range-meter": {
+      "comments": {
+        "Bko0B0xsgz": {
+          "content": "Divide by 100 to convert centimeters to meters",
+          "id": "Bko0B0xsgz",
+          "position": {
+            "units": "slots",
+            "x": 4,
+            "y": 6
+          },
+          "size": {
+            "height": 1,
+            "units": "slots",
+            "width": 4
+          }
+        },
+        "H1FCSCxsxf": {
+          "content": "Map the voltage to inverse distance (1/cm)",
+          "id": "H1FCSCxsxf",
+          "position": {
+            "units": "slots",
+            "x": 8,
+            "y": 4
+          },
+          "size": {
+            "height": 1,
+            "units": "slots",
+            "width": 4
+          }
+        },
+        "SJu0H0xsxz": {
+          "content": "Multiply by AVcc to get the voltage level",
+          "id": "SJu0H0xsxz",
+          "position": {
+            "units": "slots",
+            "x": 5,
+            "y": 3
+          },
+          "size": {
+            "height": 1,
+            "units": "slots",
+            "width": 4
+          }
+        },
+        "rJqArResef": {
+          "content": "Invert the distance",
+          "id": "rJqArResef",
+          "position": {
+            "units": "slots",
+            "x": 4,
+            "y": 5
+          },
+          "size": {
+            "height": 1,
+            "units": "slots",
+            "width": 4
+          }
+        }
+      },
+      "links": {
+        "BJ80H0xixG": {
+          "id": "BJ80H0xixG",
+          "input": {
+            "nodeId": "SyfABRgjgG",
+            "pinKey": "BytUCdHD1-"
+          },
+          "output": {
+            "nodeId": "HkWRBRxigf",
+            "pinKey": "H12bIR_SPyZ"
+          }
+        },
+        "BJw0SRgoeG": {
+          "id": "BJw0SRgoeG",
+          "input": {
+            "nodeId": "rJQABAgilM",
+            "pinKey": "SkdIRuBD1b"
+          },
+          "output": {
+            "nodeId": "SyfABRgjgG",
+            "pinKey": "BkqLCOSw1W"
+          }
+        },
+        "ByLeGi0ym": {
+          "id": "ByLeGi0ym",
+          "input": {
+            "nodeId": "SJAyGsRJQ",
+            "pinKey": "SkUhQ5RkQ"
+          },
+          "output": {
+            "nodeId": "SyeOgZsgG",
+            "pinKey": "__out__"
+          }
+        },
+        "HJfxGiRJX": {
+          "id": "HJfxGiRJX",
+          "input": {
+            "nodeId": "Skg0rRxjeM",
+            "pinKey": "B1GfLR_SPk-"
+          },
+          "output": {
+            "nodeId": "SJAyGsRJQ",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "Hk0xGjCJm": {
+          "id": "Hk0xGjCJm",
+          "input": {
+            "nodeId": "SJAyGsRJQ",
+            "pinKey": "r1l3XcR17"
+          },
+          "output": {
+            "nodeId": "HkhxMoR1X",
+            "pinKey": "__out__"
+          }
+        },
+        "Hy4CHCeigf": {
+          "id": "Hy4CHCeigf",
+          "input": {
+            "nodeId": "HkWRBRxigf",
+            "pinKey": "BJlzICOSv1-"
+          },
+          "output": {
+            "nodeId": "Skg0rRxjeM",
+            "pinKey": "BkQzLCurwJZ"
+          }
+        },
+        "SkxtlZjxG": {
+          "id": "SkxtlZjxG",
+          "input": {
+            "nodeId": "Skg0rRxjeM",
+            "pinKey": "SJ4zUC_BD1-"
+          },
+          "output": {
+            "nodeId": "BJqdlWogG",
+            "pinKey": "__out__"
+          }
+        },
+        "rkxd0lixz": {
+          "id": "rkxd0lixz",
+          "input": {
+            "nodeId": "SkTw0gjgf",
+            "pinKey": "__in__"
+          },
+          "output": {
+            "nodeId": "rJQABAgilM",
+            "pinKey": "BkqLCOSw1W"
+          }
+        }
+      },
+      "nodes": {
+        "BJqdlWogG": {
+          "boundLiterals": {
+            "__out__": "5"
+          },
+          "id": "BJqdlWogG",
+          "label": "AVcc",
+          "position": {
+            "units": "slots",
+            "x": 3,
+            "y": 2
+          },
+          "type": "xod/patch-nodes/input-number"
+        },
+        "HkWRBRxigf": {
+          "boundLiterals": {
+            "HJCWLAdSwyW": "2",
+            "rJbGU0_Hv1Z": "0.02",
+            "rkpbU0OrwyZ": "0.033",
+            "ry1z8CuBDy-": "1.25"
+          },
+          "id": "HkWRBRxigf",
+          "position": {
+            "units": "slots",
+            "x": 2,
+            "y": 4
+          },
+          "type": "xod/math/map"
+        },
+        "HkhxMoR1X": {
+          "id": "HkhxMoR1X",
+          "label": "PORT",
+          "position": {
+            "units": "slots",
+            "x": 1,
+            "y": 0
+          },
+          "type": "xod/patch-nodes/input-port"
+        },
+        "SJAyGsRJQ": {
+          "id": "SJAyGsRJQ",
+          "position": {
+            "units": "slots",
+            "x": 1,
+            "y": 1
+          },
+          "type": "xod/common-hardware/analog-sensor"
+        },
+        "SkTw0gjgf": {
+          "id": "SkTw0gjgf",
+          "label": "Dm",
+          "position": {
+            "units": "slots",
+            "x": 1,
+            "y": 7
+          },
+          "type": "xod/patch-nodes/output-number"
+        },
+        "Skg0rRxjeM": {
+          "boundLiterals": {
+            "SJ4zUC_BD1-": "5"
+          },
+          "id": "Skg0rRxjeM",
+          "position": {
+            "units": "slots",
+            "x": 2,
+            "y": 3
+          },
+          "type": "xod/core/multiply"
+        },
+        "SyeOgZsgG": {
+          "boundLiterals": {
+            "__out__": "Continuously"
+          },
+          "id": "SyeOgZsgG",
+          "label": "UPD",
+          "position": {
+            "units": "slots",
+            "x": 4,
+            "y": 0
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        },
+        "SyfABRgjgG": {
+          "boundLiterals": {
+            "SkdIRuBD1b": "1"
+          },
+          "id": "SyfABRgjgG",
+          "position": {
+            "units": "slots",
+            "x": 1,
+            "y": 5
+          },
+          "type": "xod/core/divide"
+        },
+        "rJQABAgilM": {
+          "boundLiterals": {
+            "BytUCdHD1-": "100"
+          },
+          "id": "rJQABAgilM",
+          "position": {
+            "units": "slots",
+            "x": 1,
+            "y": 6
+          },
+          "type": "xod/core/divide"
+        }
+      },
+      "path": "@/gp2y0a02-range-meter"
+    },
+    "@/main": {
+      "comments": {
+        "HJcjI-olf": {
+          "content": "Look!\nWe can read three sensors\nat once",
+          "id": "HJcjI-olf",
+          "position": {
+            "units": "slots",
+            "x": 6,
+            "y": 1
+          },
+          "size": {
+            "height": 2,
+            "units": "slots",
+            "width": 3
+          }
+        }
+      },
+      "links": {
+        "BJlK0ljez": {
+          "id": "BJlK0ljez",
+          "input": {
+            "nodeId": "HyIFsxjgG",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "BytOAxolG",
+            "pinKey": "SkTw0gjgf"
+          }
+        },
+        "HJWihGWsxG": {
+          "id": "HJWihGWsxG",
+          "input": {
+            "nodeId": "B1s3zWoeM",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "Hyxo2G-jxf",
+            "pinKey": "SkTw0gjgf"
+          }
+        },
+        "Hy-YhGZjez": {
+          "id": "Hy-YhGZjez",
+          "input": {
+            "nodeId": "HJF3MWjgG",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "H1xY2GWjez",
+            "pinKey": "SkTw0gjgf"
+          }
+        }
+      },
+      "nodes": {
+        "B1s3zWoeM": {
+          "id": "B1s3zWoeM",
+          "position": {
+            "units": "slots",
+            "x": 2,
+            "y": 2
+          },
+          "type": "xod/debug/watch"
+        },
+        "BytOAxolG": {
+          "boundLiterals": {
+            "HJ7vCgjef": "1",
+            "HkhxMoR1X": "A2"
+          },
+          "id": "BytOAxolG",
+          "position": {
+            "units": "slots",
+            "x": -2,
+            "y": 1
+          },
+          "type": "@/gp2y0a02-range-meter"
+        },
+        "H1xY2GWjez": {
+          "boundLiterals": {
+            "HkhxMoR1X": "A1"
+          },
+          "id": "H1xY2GWjez",
+          "position": {
+            "units": "slots",
+            "x": -6,
+            "y": 1
+          },
+          "type": "@/gp2y0a02-range-meter"
+        },
+        "HJF3MWjgG": {
+          "id": "HJF3MWjgG",
+          "position": {
+            "units": "slots",
+            "x": -6,
+            "y": 2
+          },
+          "type": "xod/debug/watch"
+        },
+        "HyIFsxjgG": {
+          "id": "HyIFsxjgG",
+          "position": {
+            "units": "slots",
+            "x": -2,
+            "y": 2
+          },
+          "type": "xod/debug/watch"
+        },
+        "Hyxo2G-jxf": {
+          "boundLiterals": {
+            "HJ7vCgjef": "2",
+            "HkhxMoR1X": "A3"
+          },
+          "id": "Hyxo2G-jxf",
+          "position": {
+            "units": "slots",
+            "x": 2,
+            "y": 1
+          },
+          "type": "@/gp2y0a02-range-meter"
+        }
+      },
+      "path": "@/main"
+    }
+  }
+}
